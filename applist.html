@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>WPhone</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <meta http-equiv="page-enter" content="revealtrans(duration=4,transition=23),duration=4" />
+    <meta http-equiv="page-exit" content="revealtrans(duration=4,transition=23),duration=4" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/mystyle.css">
+    <link rel="icon" type="image/x-icon" href="updata/logo.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="script/html5shiv/3.7.0/html5shiv.min.js"></script>
+        <script src="script/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--顶部栏目-->
+    <header>
+      <nav class="navbar navbar-default" role="navigation">
+          <div class="container">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="updata/logo.png" alt="大魔盒"> 大魔盒</a>
+              </div>
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="consult.html">资讯</a></li>
+                    <li class="dropdown active">
+                      <a href="discover.html" class="dropdown-toggle" data-toggle="dropdown">发现 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="ranking.html"><span class="glyphicon glyphicon-sort"></span> 排行榜</a></li>
+                        <li class="divider"></li>
+                        <li><a href="subject.html"><span class="glyphicon glyphicon-file"></span> 话题</a></li>
+                        <li class="divider"></li>
+                        <li class="active"><a href="application.html"><span class="glyphicon glyphicon-save"></span> 应用 + 游戏</a></li>
+                        <li class="divider"></li>
+                        <li><a href="special.html"><span class="glyphicon glyphicon-picture"></span> 专题</a></li>
+                        <li class="divider"></li>
+                        <li><a href="map.html"><span class="glyphicon glyphicon-tower"></span> 联系我们</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="搜索">
+                    </div>
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                  </form>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">关注微博</a></li>
+                    <li class="dropdown userbox">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">个人中心 <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#"><span class="glyphicon glyphicon-user"></span> 我的主页</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-envelope"></span> 私信 <span class="badge">14</span></a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog"></span> 设置</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> 退出</a></li>
+                      </ul>
+                    </li>
+                    <!-- 未登录 -->
+                    <li class="userlogin"><a>登录</a></li>
+                    <li class="userreg"><a>注册</a></li>
+                  </ul>
+              </div><!-- /.navbar-collapse -->
+          </div>
+      </nav>
+    </header>
+    <!--顶部栏目结束-->
+
+    <!--应用-->
+    <div class="container">
+	<div class="applist">
+	    <h1 class="subhead">游戏</h1>
+           <ol class="breadcrumb">
+              <li><a href="#">首页</a></li>
+              <li><a href="#">应用 + 游戏</a></li>
+              <li class="active"><a href="#">游戏</a></li>
+          </ol>
+          <div id="applist" class="containerbox">
+            <div class="col-md-9">
+                  <!-- 游戏分类 -->
+                  <h3>游戏分类</h3>
+                  <span class="titlelist listnav">
+                            <a class="active" href="">全部</a>
+                            <a href="">动作与冒险</a>
+                            <a href="">棋牌</a>
+                            <a href="">经典</a>
+                            <a href="">益智</a>
+                            <a href="">家庭</a>
+                            <a href="">音乐</a>
+                            <a href="">平台动作游戏</a>
+                            <a href="">拼图与趣味</a>
+                            <a href="">赛车与飞行</a>
+                            <a href="">角色扮演</a>
+                            <a href="">射击</a>
+                            <a href="">运动与休闲</a>
+                            <a href="">战略模拟</a>
+                            <a href="">Xbox小帮手</a>
+                  </span>
+                  <ul class="row">
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo1.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo2.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo2.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo2.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                    <li class="col-md-2 col-xs-4">
+                      <div class="itembox">
+                        <a href="appitem.html"><img src="updata/applogo2.png" alt=""><span></span></a>
+                        <div class="itemintro">
+                            <h5 class="title"><a href="">WP App Name</a></h5>
+                            <p class="developer"><a href="">开发商信息</a></p>
+                            <div class="pricebox">
+                                  <span class="star fl"><a href=""><i style="width:90%"></i></a></span>
+                                  <span class="price fr">￥21</span>
+                            </div>
+                            <div class="download"></div>
+                        </div>
+                      </div>
+                    </li>
+
+                  </ul>
+                  <!-- 最新上架结束 -->
+            </div>
+            <!-- sidebar -->
+            <div class="sidebar col-md-3">
+                <div class="sidebarbox">
+                <!-- 第三方登录 登录后删除 -->
+                <div class="loginforother panel panel-default">
+                  <h5 class="panel-heading">登录</h5>
+                  <div class="login-box"></div>
+                  <a href="" class="btn btn-danger"><span class="ico-dowm ico-qqlogin"></span> QQ登录</a>
+                  <a href="" class="btn btn-primary"><span class="ico-dowm ico-weibologin"></span> 微博登录</a>
+                  <div class="clearfix"></div>
+                </div>  <!-- 第三方登录结束 -->
+                
+                <!--下载助手-->
+                <div class="appdown panel panel-default">
+                    <h4 class="panel-heading">WPhone产品</h4>
+                    <div class="panel-body">
+                    <a href=""><img src="images/windows.png" alt="windows phone 官方下载"> windows phone 版</a></div>
+                </div> <!--下载助手-->
+
+                <!-- APP标签 -->
+                <div class="taglist panel panel-default">
+                <h4 class="panel-heading">热门分类</h4>
+                <div class="panel-body">
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                    <a href="#" class="btn btn-default" title="social contact 社交应用推荐">社交应用</a>
+                </div>
+                </div> <!-- APP标签结束 -->
+                
+                <!-- app游戏排行榜 -->
+                <div class="game">
+                  <div class="sort panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">游戏Top10</div>
+                    <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr>
+                            <!-- 文章分类 -->
+                            <td class="classify"><a href="" class="badge">1</a></td>
+                            <!-- 文章标题 -->
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">2</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">3</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">4</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">5</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">6</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">7</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">8</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">9</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">10</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div><!-- app游戏排行榜结束 -->
+                  <!-- app应用排行榜 -->
+                  <div class="app">
+                  <div class="sort panel panel-default">
+                    <!-- Default panel contents -->
+                    <div class="panel-heading">应用Top10</div>
+                    <table class="table">
+                        <thead></thead>
+                        <tbody>
+                          <tr class="active">
+                            <!-- 文章分类 -->
+                            <td class="classify"><a href="" class="badge">1</a></td>
+                            <!-- 文章标题 -->
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">2</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">3</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">4</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">5</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">6</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">7</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">8</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">9</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                          <tr>
+                            <td class="classify"><a href="" class="badge">10</a></td>
+                            <td class="title"><a href="appitem.html"><img src="updata/applogo.jpg" class="applogo">CoolWriter</a></td>
+                            <td class="down"><a href=""><img src="images/down.png"></a></td>
+                          </tr>
+                        </tbody>
+                    </table>
+                  </div>
+                </div><!-- app应用排行榜结束 -->
+              </div>
+            </div> <!-- sidebar-结束 -->
+            <div class="clearfix"></div>
+          </div>
+          </div>
+	</div>
+    </div>
+    <!--应用结束-->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+            <p class="copy">
+                深圳市魔盒网络有限公司  Copyright © ALL Rights Reserved 2013 粤ICP备13013428号
+            </p>
+        </div>
+    </footer>
+    <!-- footer结束 -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="script/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="script/bootstrap.min.js"></script>
+    <!-- 图钉 jquery.pin.min.js -->
+    <script type="text/javascript" src="script/jquery.pin.min.js"></script>
+    <!-- 自定义 -->
+    <script type="text/javascript" src="script/setting.js"></script>
+    <!--子页面自定义-->
+    <script type="text/javascript" src="script/page.js"></script>
+    <!-- 百度分享 -->
+      <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"slide":{"type":"slide","bdImg":"0","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+    </body>
+</html>

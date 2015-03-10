@@ -1,0 +1,477 @@
+body{ background:#fefefe; overflow-x:hidden; font-family: "微软雅黑" }
+a{ color:#777; transition: color .5s }
+a:hover{ color:#000; }
+img{ max-width: 100%; }
+header{ position: relative; z-index: 1; }
+.fl{ float: left; }
+.fr{ float: right; }
+*{ -moz-box-sizing: border-box; }
+
+.container{ position: relative; z-index: 0; }
+.adbanner{ padding-right: 15px; }
+.adbanner .banner{ margin:10px 10px 20px; }
+.dropdown-toggle{ cursor: pointer; }
+/*menubar*/
+.navbar{ margin:0; }
+a:hover,a:active{ text-decoration: none; }
+.navbar-default{ background:-webkit-linear-gradient(top,#fff,#eee); -moz-linear-gradient(top,#fff,#eee); -o-linear-gradient(top,#fff,#eee); box-shadow: 1px 1px 1px #ccc; }
+.navbar-nav>li>.dropdown-menu{ border-bottom-left-radius: 4px; border-bottom-right-radius: 4px; background-color: #eee; border-top:0; margin-top: 2px; }
+.navbar-right .dropdown-menu .badge{ background-color: #cc3333; }
+
+/*userlogin*//*fidebox*/
+.userlogin a,.userreg a{ cursor: pointer; }
+.fidebox{ position: fixed ; top:0; width:100%; left: 0; height: 100%; z-index: 10; }
+.fidebox form{ width:450px; margin: -210px 0 0 -225px;  position: absolute; left:50%; top:50%; z-index: 1; background-color: #fff; padding: 20px; border-radius: 6px; }
+.fidebox form h3{ border-bottom: 1px solid #bbb; padding-bottom: 10px; margin-bottom: 30px; font-weight: bold }
+.fidebox span{ display: block; position: absolute; top:0 left:0; width:100%; height: 100%; z-index: 0; background-color: #000; opacity: 0.8;
+filter: alpha(opacity=80); }
+.fidebox .close{ background-color: #DF1E1E; width:40px; height: 40px; line-height: 40px; border-radius: 20px; padding:0; text-align: center; opacity: .7; filter: alpha(opacity=70); margin-top:-35px; margin-right: -10px; color:#fff; }
+.fidebox .close:hover{ opacity: 1;-moz-opacity: 1;filter:alpha(opacity=100); }
+
+/*topbanner*/
+.downmove:empty { display: block !important; margin:0 auto; padding:5px; background:#cecece; width:25px; cursor: pointer; }
+.bg{height:650px;width: 100%;background: url(../images/bg-2.jpg) center 0; padding:40px 0; position: relative; box-shadow: 1px 3px 3px #ccc;}
+.bg .wrapper{ max-width: 1000px; position: relative; margin:0 auto; padding:0; }
+
+.t-links{height:565px;}
+.bg li{width: 184px;height: 214px;position: absolute;display: block;overflow: hidden; }
+
+.bg a{font-size: 32px;color: #fff;line-height: 36px; padding:18px 5px; display: block;text-align: center;}
+.bg a:hover{color: #fff}
+.bg b{width:0;height:0;border-width:52px 92px;overflow:hidden;zoom:1;font-size:0;display: block;}
+.bg b.t-br{border-style:dashed dashed solid;border-color:transparent transparent #E4393C; margin-top: -52px;}
+.bg b.b-br{border-style:solid dashed dashed;border-color:#E4393C transparent transparent;}
+.li-bg b.t-br,.li-bg b.b-br{border-style:dashed;border-color:transparent;}
+
+.li-bg{background: url(../images/t-links.png) no-repeat;_background: url(../images/t-links-ie6.png) no-repeat;text-indent: -999em}
+.li-1{left: 100px;top: 0; }
+.li-1 a{background-color: #e34633}
+.li-1 b.t-br{border-color:transparent transparent #e34633;}
+.li-1 b.b-br{border-color:#e34633 transparent transparent;}
+
+.li-2{left: 304px;top: 0;background-position: 0 0;}
+.li-3{left: 508px;top: 0}
+.li-3 a{background-color: #f16506}
+.li-3 b.t-br{border-color:transparent transparent #f16506;}
+.li-3 b.b-br{border-color:#f16506 transparent transparent;}
+
+.li-4{left: 712px;top: 0;background-position: 0 -214px;}
+
+.li-5{left: 0;top: 175px;background-position: 0 -428px;}
+.li-6{left: 204px;top: 175px;}
+.li-6 a{background-color: #1ecd70}
+.li-6 b.t-br{border-color:transparent transparent #1ecd70;}
+.li-6 b.b-br{border-color:#1ecd70 transparent transparent;}
+
+.li-7{left: 408px;top: 175px;background-position: 0 -642px;}
+.li-8{left: 612px;top: 175px;}
+.li-8 a{background-color: #34a7e0}
+.li-8 b.t-br{border-color:transparent transparent #34a7e0;}
+.li-8 b.b-br{border-color:#34a7e0 transparent transparent;}
+
+.li-9{left: 816px;top: 175px;background-position: 0 -856px;}
+
+.li-10{left: 304px;top: 352px;background-position: 0 -1070px;}
+.li-11{left: 508px;top: 352px;}
+.li-11 a{background-color: #28599e;}
+.li-11 b.t-br{border-color:transparent transparent #28599e;}
+.li-11 b.b-br{border-color:#28599e transparent transparent;}
+
+.tit-h3{color: #34a7e0;font-size: 30px;text-align: center;font-weight:600;padding: 30px 0 12px 0;}
+.news-list{padding-bottom: 10px; border-top: 1px solid #e4e7e8;border-bottom: 1px solid #e4e7e8}
+.news-list li{width: 454px;height:115px;float: left;display: block;}
+
+.li-01,.li-03,.li-05{padding: 0 35px 0 10px;border-right:1px solid #e4e7e8;}
+.li-02,.li-04,.li-06{padding: 0 10px 0 35px;width: 455px;}
+.news-list div{padding: 18px 0;border-bottom: 1px dashed #e4e7e8 }
+.li-05 div,.li-06 div{border-bottom: none;}
+.news-list li:hover div{background-color: #e3e7e8;border-color: #fff}
+.icon{background: url(../images/icon.png) 0 -70px no-repeat;}
+.icon-1{width: 20px;height: 30px;display: block;background-position: 7px -140px; padding: 0 7px;background-color: #fff; position: absolute;top: -12px; left: 50%;margin-left: -17px;}
+.news-list span{width:70px;height: 70px;padding-right: 5px;font-size: 42px; line-height: 70px; text-align: center; display:block;float: left; color: #fff}
+.li-01,.li-02{padding-top: 35px}
+.li-01 span,.li-02 span{background-position: 0 0}
+
+.t-links li:hover {
+-webkit-transform: rotate(0deg);
+transform: rotate(0deg);
+-moz-transform: rotate(0deg);
+opacity: 1;
+}
+.t-links li {
+font-weight: bold;
+-webkit-transform: rotate(180deg);
+-webkit-transition: -webkit-transform 1s,opacity 1s,background 1s,width 1s,height 1s,font-size 1s;
+-o-transition-property: width,height,-o-transform,background,font-size,opacity;
+-o-transition-duration: 1s,1s,1s,1s,1s,1s;
+-moz-transition-property: width,height,-o-transform,background,font-size,opacity;
+-moz-transition-duration: 1s,1s,1s,1s,1s,1s;
+transition-property: width,height,transform,background,font-size,opacity;
+transition-duration: 1s,1s,1s,1s,1s,1s;
+opacity: 0.6;
+}
+/*topbannerend*/
+.carousel,.textbox,.container,.main{ padding:0; }
+.main{ padding-right: 15px }
+.carousel-inner,.item,.item img,.carousel-control{ border-radius: 6px; overflow: hidden; }
+.banner .item img{ width:100%; }
+.loginforother{ margin-bottom: 10px; }
+.loginforother h5{ margin: 0 0 10px }
+.loginforother a{ width:46%; margin:0 2% 10px 2%; font-size: 12px; float:left; }
+.panel-title a{ display: block; }
+
+.ico-dowm{ background-image: url("../images/ico-dowm.png"); background-repeat: no-repeat; display: inline-block; vertical-align: middle; }
+.ico-qqlogin{ background-position: -89px top; width:18px; height: 19px; }
+.ico-weibologin{ background-position: -18px top; width:19px; height: 19px; }
+.adpic img{ width:100%; border-radius: 6px; margin:0 auto 10px; }
+
+.textbox .panel-body{ font-size: 12px; }
+.textbox .panel-group{ margin-bottom: 10px; }
+.textbox .panel-group img{ height: 125px; display: block; margin: 0 auto; border-radius: 20px; }
+.textbox .panel-group span{ text-indent: 2em; display: block; margin-top:20px; font-size: 14px; line-height: 2 }
+
+.fidebox .form-control{ width: 80% }
+.fidebox .form-horizontal .form-group{ margin:0 0 15px; }
+.form-group{ min-width: 3em }
+/*taglist*/
+.taglist h4,.panel-heading{ margin:0 auto; }
+.taglist a{ margin: 0 1.33333333% 5px 2%; font-size: 12px; width:30%; display: block; float: left; }
+.tooltip{ width:100%; }
+
+/*sidebar*/
+.sidebar{ right: 0; }
+
+/*login-box*/
+.login-box{ padding:10px; border-bottom: 1px solid #ddd; margin-bottom: 10px; min-height: 190px; }
+.login-box h3{ display: none; }
+.login-box .form-group .col-sm-2{ padding-left:0; padding-right: 0; min-width: 3em }
+.login-box .form-horizontal .form-group{ margin:0 0 10px; }
+.login-box .col-sm-10{ padding:0 5px; }
+/*apptop*/
+.apptop{ margin-bottom: 20px; }
+.apptop a.btn{ margin:0 0 10px; border:none; display: block; border-radius: 22px }
+.apptop a.btn img{ width: 100%; border-radius: 22px; }
+.apptop a.btn p{ text-overflow:ellipsis; overflow:hidden; white-space:nowrap; width: 100%; }
+.apptop .carousel-inner{ margin:15px 30px; padding:0; width:auto; }
+.apptop .carousel-control{ background: none; width:30px; }
+.apptop .left{ left: -10px; }.apptop .right{ right: -10px;}
+.apptop .glyphicon{ color:#333; background: none; }
+.apptop .panel-heading span{ float: right; font-size: 12px; }
+.apptop .panel-heading span a{ padding-right: 10px; }
+.carousel-indicators{ bottom:-35px; background-color: #ddd; border-radius: 7px; }
+.carousel-indicators li{ border-color: #333; }
+.carousel-indicators .active{ background-color: #333; }
+.apptop  .col-md-2{ padding:5px; }
+
+/*consult*/
+.consult{ font-size: 12px; margin: 0;}
+.consult .badge{ transition: background-color .5s }
+.consult .active .badge{ line-height: 44px; min-width: 45px; background-color: #357ebd;  }
+
+.consult .table .title{ width:50px; }
+.consult h5{ margin:0 0 5px; font-weight: bold; }
+.consult .table .applogo{ width:60px; padding-left: 0; display: inline-block; padding-right: 10px; border-radius: 12px; position: absolute; }
+.consult .table .applogo img{ width: 100%; border-radius: 10px; }
+.consult .table .appintro{ font-size: 14px; padding-left: 3px; position: relative; padding-bottom: 6px; }
+.consult .table .apptext{ display: inline-block; margin-left: 70px; min-height: 50px; }
+.consult .table .apptext h5{ line-height: 1.7; }
+.consult .table .appintro p{ font-size: 12px; margin:0; text-indent: 2em; line-height: 1.5; height: 1.7em; overflow: hidden; }
+.consult .table .active .appintro p{ display: block; height: 52px }
+.consult .table .time{  line-height: 1.7; width:50px; }
+
+/*matter*/
+.matter .row{ padding:10px; margin:0; }
+.matter .row .col-md-6{ padding:3px; }
+.matter .row .col-md-6 .thumbnail{ margin-bottom: 0; }
+
+.panel-default>.panel-heading{ font-size:16px; }
+.more{ float: right; font-size: 14px; }
+
+/*sort*/
+.sort .table { width:100%; }
+.sortnav { float: right; }
+.sortnav a{ font-size: 12px; padding:5px 10px; border:1px solid #999;  border-radius: 6px; cursor: pointer; color:#333; }
+.sortnav a.active{ background-color: #333; color:#fff; }
+.sort .classify{ width:50px; }
+.sort .classify .badge{ margin-top:5px; display: block; transition:all .5s; }
+.sort .title .applogo{ width:40px; padding-right: 10px; display: none;}
+.sort .active .title .applogo{ display: inline-block; }
+.sort .active .classify .badge{ line-height: 25px; background-color: #357ebd; }
+.sort .active .title { line-height: 40px; }
+.sort .down{ width:32px; }
+.app,.game{ padding:0; }
+.app{ padding-left: 5px; }
+.game{ padding-right: 5px; }
+
+.bottompic img{ min-height: 170px; width: 100%; }
+.bottompic ul{ padding:0; margin-right: 0; }
+.bottompic ul li{ padding-right: 0;  list-style-type: none; padding-left: 15px; }
+
+/*showapp*/
+.showapp{ padding-right: 0; }
+
+/*.friend_link*/
+.friend_link{border-radius:6px;border:1px solid #ddd;border-bottom:0;display:table;margin:0 auto 10px;font-size:12px;overflow:hidden}
+.friend_link tr{border-bottom:1px solid #ccc}
+.friend_link_title{text-align:center;color:#666;width:85px;line-height:14px;background:#f8f8f8;font-weight:700;text-align:center}
+.friend_link_menu{padding:8px;color:#868686}
+.friend_link_menu a{margin:0 7px;display:inline-block;color:#868686;line-height:24px}
+.friend_link_menu a:hover{color:#000}
+
+/*footer*/
+footer{ margin-top:50px; padding:15px 0; background:url("../images/footerbg.png");box-shadow: -1px -1px 1px #ccc; }
+footer .copy{ padding:10px; text-align: center; color:#ddd;}
+/*首页样式表结束---------------------------------------------------------------------------------------------------------------------------------*/
+
+h1.subhead{  text-align: center; margin:50px 0 30px; padding:10px;  background-color: #eee; }
+#allmap{ min-height: 300px; background-color: #000; padding:20px; border-radius: 7px; color:#fff; }
+/*联系我们样式表结束----------------------------------------------------------------------------------------------------------------------------*/
+
+#ranking{ padding-right: 10px }
+#ranking .panel-body li{ list-style-type: none; margin-bottom: 15px; padding-bottom: 10px;  }
+#ranking .panel-body li i{ display: inline-block; width:40px; height: 40px; text-align: center; line-height: 40px; border-radius: 7px; font-style: normal; font-size: 16px; font-weight: bold; float: left; }
+#ranking .iphone .panel-body li{ border-bottom: 1px solid #bce8f1;  }
+#ranking .iphone .panel-body li i{ background-color: #bce8f1; }
+#ranking .ipad .panel-body li{ border-bottom: 1px solid #faebcc;  }
+#ranking .ipad .panel-body li i{ background-color: #faebcc; }
+#ranking h5{ font-size: 24px; float: left; }
+#ranking .download{ float: right; }
+#ranking .download span{ display: block; background:url(../images/download.png) no-repeat; background-size: 60%; width: 48px; height: 48px; }
+#ranking .panel-body li img{ margin:0 15px; width:40px; border-radius: 7px; float: left; }
+/*排行榜样式表结束-------------------------------------------------------------------------------------------------------------------------------*/
+
+.consultlist,#subbody .sublist, #applist .col-md-9{ padding:0 10px 0 0; }
+.consultlist ul , #subbody .sublist ul , #applist .col-md-9 ul{ padding:0; list-style-type: none; }
+.consultlist ul li{ margin-bottom: 10px; overflow: hidden; position: relative; }
+.consultlist ul li .logo img,.consult-groom img{
+	display: inline-block;
+	*display: inline;
+	padding:10px; 
+	-moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	box-shadow: 0 2px 2px rgba(0,0,0,.1);
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.consultlist ul li .logo img:not(:hover),.consult-groom img:not(:hover){
+	-webkit-filter: blur(1px) grayscale(0);
+	-moz-filter: blur(1px) grayscale(0);
+	-o-filter: blur(1px) grayscale(0);
+	-ms-filter: blur(1px) grayscale(0);
+	filter: blur(1px) grayscale(0);
+	opacity: .7; 
+}
+.consultlist ul .col-md-8{ padding: 10px; line-height: 2; }
+.consultlist ul li .user_time{ position: absolute; bottom: 10px; right:20px; }
+.consultlist ul li .user{ padding:0 20px 0 0; }
+/*资讯样式表结束-------------------------------------------------------------------------------------------------------------------------------*/
+
+#subbody .sublist nav.listbar h3.panel-heading a{ border-radius: 5px; padding: 5px 10px; display: inline-block; margin-right: 5px; }
+#subbody .sublist nav.listbar h3.panel-heading a.active{ background-color: #dedede; color: #333; }
+#subbody .sublist nav.listbar h3.panel-heading a:hover{ background-color: #E05F5B; color:#fff; }
+#subbody .sublist nav.listbar li{ padding: 10px 0; position: relative; border-bottom: 1px solid #eee }
+#subbody .sublist nav.listbar li .userup{ width: 54px; position: absolute; padding: 5px; line-height: 1.1; top:15px; left:-1em; background-color: #d43f3a; color:#fefefe; text-align: right; font-size: 12px; cursor: pointer; }
+#subbody .sublist nav.listbar li .userup span{ font-size: 24px; display: block; font-weight:bold; }
+#subbody .sublist nav.listbar li:hover .userup span{ background-color: #fefefe; color:#d43f3a; }
+#subbody .sublist nav.listbar li .subcontent{ padding-left: 50px; }
+#subbody .sublist nav.listbar li .subcontent h5{ margin:0; }
+#subbody .sublist nav.listbar li .subcontent h5 a{ display: block; padding: 10px 0; }
+#subbody .sublist nav.listbar li .subcontent  a:hover{ color: #d43f3a; }
+#subbody .sublist nav.listbar li .subcontent .upintro{ font-size: 12px; padding-bottom: 10px; color:#999;}
+#subbody .sublist nav.listbar li .subcontent .upintro .username a{ color: #d43f3a; }
+#subbody .sublist nav.listbar li .subintro{ padding: 0 20px; }
+#subbody .sublist .pagination .active a{ background-color: #dedede; border:1px solid #cecece; color:#333; }
+/*话题样式表结束-------------------------------------------------------------------------------------------------------------------------------*/
+
+#applist h3,.special-list h3{ padding:5px; font-size: 24px; margin: 15px 0 0; border-bottom:1px solid #ccc; }
+#applist h3 .more{ font-size: 12px; line-height: 30px;  }
+#applist ul.row{ padding: 1% }
+#applist .col-md-9 ul li{ padding: 5px; float: left; font-size: 12px; }
+#applist .col-md-9 ul li div.itembox{ background-color: #dedede; padding: 10px; border-radius: 6px; position: relative; }
+#applist .col-md-9 ul li div.itembox:hover{ background-color: #ccc; }
+#applist .col-md-9 ul li img{ width: 100%; border-radius: 6px;  border: 1px solid #ddd; transform: all 3s; }
+#applist .col-md-9 ul li:hover img{ border:2px solid #eee; }
+#applist .col-md-9 ul li h5.title{ font-size: 16px; }
+#applist .col-md-9 ul li .pricebox , .app-item .applogo .pricebox { height: 14px; line-height: 14px; }
+#applist .col-md-9 ul li .star ,  .app-item .applogo .star{ background: url('../images/starbg.png') 0 0 repeat-x; width:69px; height: 14px; }
+#applist .col-md-9 ul li .star i ,  .app-item .applogo .star i{ background: url('../images/star.png') 0 0 repeat-x; height: 14px; display: block; }
+#applist .col-md-9  .titlelist a{ padding-left: 10px; }
+#applist .col-md-9 ul li .developer{ height: 40px; }
+#applist .col-md-9 ul li.col-md-2 .developer{ display: none }
+#applist .download{ position: absolute; bottom: 51px; right: 0; display: none; line-height: 14px;  padding: 5px; background:url(../images/download.png) center center no-repeat #fefefe; background-size: 60%; width: 35px; height: 35px; cursor: pointer; }
+#applist .download:hover{ background-color: #eee; }
+/*应用页样式表结束-----------------------------------------------------------------------------------------------------------------------------*/
+
+.iosSliders{clear:both;width:100%;padding:0 0 20px;margin:0 ;position:relative}
+.fluidHeight{width:100%;height:400px;padding:30px 0 45px;background:#363739;box-shadow:inset 0 3px 10px -4px #000,inset 0 -3px 10px -4px #000; border-radius: 10px;}
+.sliderContainer{height:100%;max-height:400px;padding:0}
+.iosSlider{position:relative;top:0;left:0;overflow:hidden;width:100%;height:100%}
+.iosSlider .slider{width:100%;height:100%}
+.iosSlider .slider .item{width:1200px;height:100%;padding:0;text-align:center}
+.iosSlider .slider .item .inner{position:relative;top:0;left:0;width:95%;margin:0 auto;height:100%;box-shadow:0 0 10px -5px #000;background-position:50% 0;background-repeat:no-repeat}
+.iosSlider .slider .item .inner img{position:relative;top:0;left:0;width:100%;margin:0 auto}
+.iosSlider .slider .item .inner .selectorShadow{position:absolute;left:0;bottom:0;background:url('../images/selector-shadow.png') no-repeat 0 0;width:120px;height:30px;display:none}
+.iosSlider .slider .item .inner .text1{background:none repeat scroll 0 0 #000;opacity:0;filter:alpha(opacity=0);position:absolute;left:100px;top:30px;padding:0 2px 0 7px;height:75px;text-align:left}
+.iosSlider .slider .item .inner .text1 span{color:#fff;font-size:420%;font-weight:100;line-height:76px;padding:0 8px}
+.iosSlider .slider .item .inner .text1 span i{margin:0 0 0 5px}
+.iosSlider .slider .item .inner:hover  a{ color:#fff; }
+.iosSlider .slider .item .inner .text2{background:none repeat scroll 0 0 #000;opacity:0;filter:alpha(opacity=0);padding:10px 7px 7px;position:absolute;left:100px;top:115px;text-align:left}
+.iosSlider .slider .item .inner .text2 span{display:block;color:#fff;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:120%;line-height:120%;font-weight:100;padding:0 8px}
+.sliderContainer .slideSelectors{position:relative;bottom:-17px;left:0;width:137px;margin:0 auto;z-index:1;height:11px}
+.sliderContainer .slideSelectors .item{float:left;width:9px;height:9px;background:#aaa;margin:1px 1px 1px 11px;filter:alpha(opacity=25);border-radius:10px}
+.sliderContainer .slideSelectors .item.first{margin-left:1px}
+.sliderContainer .slideSelectors .selected{width:11px;height:11px;margin:0 0 0 10px;background:#eee;opacity:1;filter:alpha(opacity=100);box-shadow:none}
+.sliderContainer .slideSelectors .selected.first{margin-left:0}
+.sliderContainer .scrollbarContainer{position:relative;bottom:4px;left:0;width:1024px;height:4px;margin:0 auto;z-index:1}
+@media screen and (max-width:1200px){.iosSliderDemo{padding-bottom:424px}
+.fluidHeight{height:334px}
+.iosSlider .slider .item{width:100%}
+}
+.special .banner { margin: 10px 0 0; }
+.special .carousel-indicators{ bottom: 0px; }
+.special-list{ padding-right: 10px; }
+.special-list ul { list-style-type: none; padding: 10px 0 0; margin-bottom: 0  }
+.special-list ul li{padding: 10px; width: 33%; float: left; font-size: 12px; height: 300px; }
+.special-list ul li img{ height: 150px; border-radius: 10px; }
+.special-list ul li h4{ width:100%; font-size: 12px; font-weight: bold; }
+.special-list ul li p{ width:100%; max-height: 60px; line-height: 20px; overflow: hidden; color:#888; }
+.special-list ul li p.grey{ line-height: 30px; }
+.special-list ul li p.grey a{ background-color: #DDD; display: inline-block; padding:0px 5px; }
+.panel h3{ margin-top:0; }
+/*专题页样式表结束-----------------------------------------------------------------------------------------------------------------------------*/
+
+.consult-item h1.subhead{ margin:50px 0 10px; }
+.breadcrumb{ display: inline-block; border:1px solid #ececec; margin-bottom: 10px; }
+#consult-item .col-md-9{ padding-right: 10px; }
+.showitem{ margin-right: 10px; padding:15px; background-color: #efefef; border-radius: 6px; }
+.showitem img{ margin-bottom: 10px; border-radius: 10px; display: inline-block; width: 100%; }
+.showitem p{ text-indent: 2em; line-height: 2; display: inline-block; margin-bottom: 2em; font-size: 14px; }
+.consult-groom{ width:48%; margin:15px 10px 0 0; padding: 10px 15px; background-color: #efefef; }
+.consult-groom h5{ border-bottom: 1px solid #ccc; padding:0 0 10px; }
+.consult-groom ul{ padding:0; list-style-type: none; }
+.consult-groom li{ margin-bottom: 9px; }
+/*咨询详细页结束-------------------------------------------------------------------------------------------------------------------------------*/
+
+.subject-item .usertalk{ margin-top: 20px; padding-right: 10px; }
+.subject-item .usertalk h3{ padding-top: 10px; }
+.media{ border-top:1px solid #cecece; padding-top: 10px; }
+.talkforit{ padding:10px 0; border-top: 1px solid #cecece; }
+.talkforit h5{ margin-bottom: 0; }
+.talkforit textarea{ width:100%; border-radius: 5px; padding:10px; margin:10px 0; }
+.talkforit button{ float:right; }
+.usertalk .media-heading span{ font-size: 12px; line-height: 20px; background-color: #000; color:#fff; padding: 0 10px; }
+/*话题详细页结束-------------------------------------------------------------------------------------------------------------------------------*/
+
+.special-item .showitem .iosSliders{ height: 160px }
+.special-item .showitem .iosSliders .item{ float:left; height: 100%; min-width: 100px; padding:0 10px; }
+.special-item .showitem .iosSliders img{ width:auto; height:80px; cursor: -webkit-grab; margin-bottom: 5px; }
+.special-item .showitem .iosSliders p{ text-indent: 0; width:80px; display: block; text-align: center; line-height: 1.3; }
+.special-item .iosSliders .slider{ height: 100% }
+.special-item .adpic{ padding-right: 10px; margin: 15px 0 0  }
+.special-item .adpic img{ margin:0; }
+.special-item .consult-groom{ text-align: center }
+.special-item .showspecial{ background-color: #EFDFFD; border:1px solid #cecece; padding:5px 15px; border-radius: 5px; margin-bottom: 10px; }
+.special-item .showspecial h4{ border-bottom: 1px solid #bbb; padding-bottom: 10px; margin-bottom: 20px; }
+/*专题详细页结束--------------------------------------------------------------------------------------------------------------------------------*/
+
+.app-item .appintro .applogo{  font-size: 12px; background-color: #fff; padding: 10px; }
+.app-item .appintro .apptext{ width:73%; }
+.app-item .showspecial .iosSliders{ height: 380px }
+.app-item .showspecial .iosSliders .item{ float:left; height: 100%; padding:0 5px; }
+.app-item .showspecial .iosSliders img{ width:auto; height:340px; cursor: -webkit-grab; margin-bottom: 5px}
+.app-item .showspecial .iosSliders p{ text-indent: 0; height:340px; display: block; text-align: center; line-height: 1.3; }
+.app-item .showspecial .slider{ height: 100% }
+
+.app-item .appintro .description{ border: 1px solid #e4e4e4; border-radius: 4px; background-color: #f5f5f5; color: #333; word-wrap: break-word; font-size: 13px; line-height: 1.428571429; word-break: break-all; overflow: hidden;  }
+.app-item .appintro .description .btn{ display: block; margin: 15px 0 0; padding: 1px 10px }
+.fidebox img{ position: absolute; z-index: 1; padding:25px 30px; background-color: #ddd; top:50%; left:50%; }
+.showitem  .description{ padding: 1em 2em; }
+.showitem  .description p{ display: block; margin:5px 0 5px; text-indent: 0;  }
+.app-item .pricebox,.app-item .stroe,.app-item .appbig,.app-item .uptime,.app-item .number,.app-item .system,.app-item .willneed,.app-item .language,.app-item .price{ margin: 20px 0 0; line-height: 20px; }
+.app-item .applogo .btn{ display: block; width: 100%; color:#fff; }
+.app-item .appintro .applogo b{ font-size: 16px; color:#777; }
+.app-item .appintro .applogo span{ display: block; font-size: 12px; color:#333; }
+#appitem .consult-groom{ width: 100%; margin-right: 20px; }
+#appitem .consult-groom ul{ margin-bottom: 0; }
+#appitem .consult-groom p{ padding: 5px 10px; }
+
+/*单个app页面----------------------------------------------------------------------------------------------------------------------------------*/
+
+.applist #applist .listnav .titlelist{ display: block; float: none; }
+.applist #applist .col-md-9 .titlelist a{ padding-right: 10px; line-height: 2; display: inline-block; background-color: #eee; margin:4px 4px 0  0 ; border-radius: 5px; }
+.applist #applist .col-md-9 .titlelist a.active{ background-color: #d43f3a; color:#fff; }
+/*app列表页面----------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*响应式结构*/
+
+@media (min-width: 1200px){
+.adpic img{ min-height: 75px; }
+.taglist a{ min-width:68px;  }
+.sidebar{ padding:0; }
+}
+@media (max-width: 1200px){
+.textbox .panel-title,.panel-heading{ font-size: 12px; }
+.adpic img{ min-height: 60px; }
+.taglist a{ min-width: 98px;  }
+.sidebar{ padding:0; }
+#applist .col-md-9 ul li h5.title{ margin:5px 0 0; }
+#applist .pricebox .star{ display: block; }
+#applist .pricebox .star,#applist .pricebox .price{ float:none; }
+#applist .col-md-9 ul li .pricebox{ height: auto }
+}  
+@media(max-width:992px){
+.adbanner{ padding:0; }
+h1.subhead{ font-size: 18px;  margin: 30px 15px 10px; }
+#ranking h5{ font-size: 16px; }
+#ranking .download span{ background-size: 70% }
+.bg .li-bg{ display: none; }
+.container>.navbar-header{ margin:0; }
+.main .col-md-8{ padding:0; }
+body .bg,.t-links{ height: auto }
+body .bg li{position: relative; left:0; top:0; width:50%; height:180px; float:left; }
+.carousel-inner {margin-bottom: 15px; }
+.banner .item img{ height: auto; }
+.t-links li{-webkit-transform: rotate(0deg);transform: rotate(0deg);-moz-transform: rotate(0deg);opacity: 1;}
+.bg b{ border-width:30px; line-height: 1.5; }
+.bg b.t-br{ margin-top:-30px; }
+.bg a{ font-size:12px; }
+.textbox .panel-group img{ width:50%; height: auto; margin-right: 4%; min-width: 120px; float:none;display: block; margin:0 auto 15px; }
+.textbox .panel-group span{ width: 100%; float:none; display: block; }
+.taglist{ margin:15px 0 15px 0; }
+.taglist a{ margin: 0 0 5px 5px; font-size: 14px; width:19%; min-width: 94px }
+.tooltip{ width:100%; }
+.apptop .glyphicon{ color:#333; }
+.apptop img{ width:100%; }
+.loginforother a , .taglist a , .textbox .panel-body , .textbox .panel-title, .panel-heading{ font-size: 14px; }
+.main{ padding:0 15px; }
+.game,.app{ padding:0; }
+.bottompic img{ min-height: 0;  margin-bottom: 10px;}
+.consult { margin: 0 0 10px }
+.consult .table .apptext{ margin-top:60px; margin-left: 0 }
+#carousel-example-generic-photo img{ height: 200px; }
+.consultlist, #subbody .sublist, #applist .col-md-9,.sidebar,#ranking,.special-list,.special .iosSliders,#consult-item .col-md-9,.subject-item,.special-item,#appitem .col-md-9{ padding:15px 15px 0; margin-bottom: 10px; }
+.showitem{ margin:0; }
+.consult-groom{ width:100%; margin:10px 0px; float:none; }
+.special-list ul { margin-bottom: 10px; }
+.breadcrumb{ margin-left: 15px; }
+.consultlist ul li .user_time{ position: relative; float:right; }
+.consultlist ul li .logo img:not(:hover),.consult-groom img:not(:hover){ filter: blur(0) grayscale(0);-webkit-filter: blur(0) grayscale(0);-moz-filter: blur(0) grayscale(0);-o-filter: blur(0) grayscale(0);-ms-filter: blur(0) grayscale(0); opacity: 1;-moz-opacity: 1;filter:alpha(opacity=1); }
+.fidebox form{ width: 90%; margin:0; left:5%; top:1%; }
+.form-control{ width:80%; }
+.navbar-collapse{ max-height: 900px; }
+.iosSlider .slider .item .inner .text1{ height: 45px; }
+.iosSlider .slider .item .inner .text2{ top:85px; }
+.iosSlider .slider .item .inner .text1 span{ font-size: 200%; line-height: 45px; }
+.iosSlider .slider .item .inner .text2 span{ font-size: 12px; }
+.iosSlider .slider .item .inner a{ color:#fff; }
+.app-item .appintro .apptext{ width: 100% }
+.fidebox img{ top:0%; left:0%; margin:0 !important; max-height: 100%; max-width:100%; }
+.special-list ul li{width:100%; border-bottom: 1px solid #cecece; height: auto;}
+.bdshare-slide-button-box{ display: none !important }
+
+}
+.downdmh img{  min-height: 20px; height: 55px; }
